@@ -1,5 +1,6 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Header } from "@/components/header/header";
 
+import { Geist, Geist_Mono } from "next/font/google";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -29,9 +30,8 @@ export default function Home() {
         font-sans
       `}
     >
-      <h2 className="text-4xl">
-        Hello World
-      </h2>
+      <Header/>
+     
     </div>
   );
 }
